@@ -211,7 +211,7 @@ const FerramentasPage = () => {
             </div>
             
             {/* Additional Options Note */}
-            <div className="mt-8 p-4 bg-blue-50 rounded-lg" data-aos="fade-up"> border border-blue-200">
+            <div className="mt-8 p-4 bg-blue-50 rounded-lg border border-blue-200" data-aos="fade-up">
               <p className="text-center text-gray-700 font-medium">
                 E mais opções sob consulta
               </p>
