@@ -184,7 +184,7 @@ const HeroSection = () => {
                 
                 <Button 
                   type="submit" 
-                  className="w-full bg-[#00BFFF] hover:bg-[#0099CC] text-white py-3 px-6 rounded-xl font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+                  className="w-full bg-[#00BFFF] hover:bg-[#0099CC] text-white py-3 px-6 rounded-xl font-semibold transition-all duration-300 shadow-lg hover:shadow-2xl transform hover:scale-105"
                 >
                   Solicitar Orçamento
                 </Button>
