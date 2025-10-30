@@ -115,14 +115,14 @@ const HeroSection = () => {
             </div>
 
             {/* Emergency Contact */}
-            <div className="bg-white/70 backdrop-blur-sm p-4 rounded-2xl border border-gray-200/50 shadow-lg">
-              <div className="flex items-center">
-                <Phone className="h-5 w-5 text-[#00BFFF] mr-3" />
+            <div className="bg-white/70 backdrop-blur-sm p-4 rounded-2xl border border-gray-200/50 shadow-lg hover:shadow-xl transition-shadow">
+              <a href="tel:+351219279178" className="flex items-center group">
+                <Phone className="h-5 w-5 text-[#00BFFF] mr-3 group-hover:scale-110 transition-transform" />
                 <div>
                   <div className="text-sm text-gray-600">Contacto de urgência</div>
-                  <div className="text-lg font-semibold text-gray-900">+351 21 927 9178</div>
+                  <div className="text-lg font-semibold text-gray-900 group-hover:text-[#00BFFF] transition-colors">+351 21 927 9178</div>
                 </div>
-              </div>
+              </a>
             </div>
           </div>
 
