@@ -1,9 +1,17 @@
-import React from 'react';
+import React, { useState, useMemo } from 'react';
 import { Button } from './ui/button';
 import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import SearchBar from './SearchBar';
 
 const ProductCatalog = () => {
+  const [searchTerm, setSearchTerm] = useState('');
+
+  // Helper function to remove accents for better search matching
+  const removeAccents = (str) => {
+    return str.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+  };
+
   const products = [
     {
       id: 1,
