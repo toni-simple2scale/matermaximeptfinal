@@ -174,8 +174,8 @@ const TubagensPage = () => {
               <h3 className="text-2xl font-bold text-gray-900 mb-6">Acessórios Disponíveis</h3>
               <div className="grid md:grid-cols-4 gap-4">
                 {acessorios.map((acessorio, index) => (
-                  <div key={index} className="bg-white/70 rounded-lg p-3 text-center">
-                    <div className="text-sm text-gray-700 font-medium">{acessorio}</div>
+                  <div key={index} className="bg-white/70 rounded-lg p-3 flex items-center justify-center">
+                    <div className="text-sm text-gray-700 font-medium text-center">{acessorio}</div>
                   </div>
                 ))}
               </div>
