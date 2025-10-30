@@ -67,30 +67,37 @@ const HomePage = () => {
 };
 
 function App() {
+  const [isLoading, setIsLoading] = useState(false);
+
   return (
     <div className="App">
       <BrowserRouter>
         <ScrollToTop />
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/produtos/agregados" element={<AgregadosPage />} />
-          <Route path="/produtos/cimento" element={<CimentoPage />} />
-          <Route path="/produtos/blocos-tijolos" element={<BlocosTijolosPage />} />
-          <Route path="/produtos/ferro" element={<FerroPage />} />
-          <Route path="/produtos/tubagens" element={<TubagensPage />} />
-          <Route path="/produtos/pre-moldados" element={<PreMoldadosPage />} />
-          <Route path="/produtos/ferramentas" element={<FerramentasPage />} />
-          <Route path="/produtos/colas-selantes" element={<ColasPage />} />
-          <Route path="/produtos/pavimentos" element={<PavimentosPage />} />
-          <Route path="/produtos/saneamento" element={<SaneamentoPage />} />
-          <Route path="/produtos/muros" element={<MurosPage />} />
-          <Route path="/produtos/aquecimento" element={<AquecimentoPage />} />
-          <Route path="/produtos/isolamentos" element={<IsolamentosPage />} />
-          <Route path="/produtos/protecao-vedacao" element={<ProtecaoVedacaoPage />} />
-          <Route path="/produtos/banho" element={<BanhoPage />} />
-          <Route path="/produtos/tintas" element={<TintasPage />} />
-          <Route path="/produtos/eletrodomesticos" element={<EletrodomesticosPage />} />
-        </Routes>
+        <BackToTop />
+        <StickyCTA />
+        {isLoading && <LoadingSpinner />}
+        <Suspense fallback={<LoadingSpinner />}>
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/produtos/agregados" element={<AgregadosPage />} />
+            <Route path="/produtos/cimento" element={<CimentoPage />} />
+            <Route path="/produtos/blocos-tijolos" element={<BlocosTijolosPage />} />
+            <Route path="/produtos/ferro" element={<FerroPage />} />
+            <Route path="/produtos/tubagens" element={<TubagensPage />} />
+            <Route path="/produtos/pre-moldados" element={<PreMoldadosPage />} />
+            <Route path="/produtos/ferramentas" element={<FerramentasPage />} />
+            <Route path="/produtos/colas-selantes" element={<ColasPage />} />
+            <Route path="/produtos/pavimentos" element={<PavimentosPage />} />
+            <Route path="/produtos/saneamento" element={<SaneamentoPage />} />
+            <Route path="/produtos/muros" element={<MurosPage />} />
+            <Route path="/produtos/aquecimento" element={<AquecimentoPage />} />
+            <Route path="/produtos/isolamentos" element={<IsolamentosPage />} />
+            <Route path="/produtos/protecao-vedacao" element={<ProtecaoVedacaoPage />} />
+            <Route path="/produtos/banho" element={<BanhoPage />} />
+            <Route path="/produtos/tintas" element={<TintasPage />} />
+            <Route path="/produtos/eletrodomesticos" element={<EletrodomesticosPage />} />
+          </Routes>
+        </Suspense>
       </BrowserRouter>
       <Toaster position="top-right" />
     </div>
