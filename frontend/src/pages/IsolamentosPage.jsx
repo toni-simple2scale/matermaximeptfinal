@@ -111,14 +111,24 @@ const IsolamentosPage = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     
-    fetch(`${process.env.REACT_APP_BACKEND_URL}/api/send-quote`, {
+    const web3FormData = new FormData();
+    web3FormData.append('access_key', process.env.REACT_APP_WEB3FORMS_ACCESS_KEY);
+    web3FormData.append('name', quoteForm.name);
+    web3FormData.append('phone', quoteForm.phone);
+    web3FormData.append('email', quoteForm.email);
+    web3FormData.append('product', quoteForm.product);
+    web3FormData.append('quantity', quoteForm.quantity);
+    web3FormData.append('message', quoteForm.message);
+    web3FormData.append('subject', `Pedido de Orçamento - ${quoteForm.product}`);
+    web3FormData.append('from_name', 'Website Matermaxime');
+    
+    fetch('https://api.web3forms.com/submit', {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(quoteForm)
+      body: web3FormData
     })
     .then(response => response.json())
     .then(data => {
-      if (data.status === 'success') {
+      if (data.success) {
         alert('Pedido de orçamento para Isolamentos Térmicos e Acústicos enviado com sucesso!');
         setQuoteForm({ name: '', phone: '', email: '', product: 'Isolamentos Térmicos e Acústicos', quantity: '', message: '' });
       } else {
