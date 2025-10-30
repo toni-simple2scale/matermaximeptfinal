@@ -60,7 +60,7 @@ const FleetSection = () => {
         {/* Fleet Overview */}
         <div className="grid lg:grid-cols-2 gap-12 items-center mb-20">
           {/* Fleet Image */}
-          <div className="relative">
+          <div className="relative" data-aos="fade-right">
             <div className="rounded-3xl overflow-hidden shadow-2xl">
               <img
                 src="https://customer-assets.emergentagent.com/job_matermaxime-store/artifacts/gkgx07da_IMG_20181231_165304.jpg"
