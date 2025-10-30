@@ -126,7 +126,7 @@ const BanhoPage = () => {
           {/* Products List */}
           <div className="lg:col-span-2">
             {/* Brands Section */}
-            <div className="mb-12 bg-gradient-to-r from-white to-blue-50 rounded-2xl p-8 border border-gray-200">
+            <div className="mb-12 bg-gradient-to-r from-white to-blue-50 rounded-2xl p-8 border border-gray-200" data-aos="fade-up">
               <div className="text-center">
                 <div className="flex items-center justify-center mb-4">
                   <Award className="h-8 w-8 text-[#00BFFF] mr-3" />
