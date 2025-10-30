@@ -83,11 +83,25 @@ const BusinessHours = () => {
                     <div className="font-bold text-gray-900 space-y-2">
                       <div>
                         <div className="text-sm text-[#00BFFF] font-semibold">Armazém:</div>
-                        <div className="text-sm">Rua do Alto das Mastrontas Nº8, 2715-311 Almargem do Bispo</div>
+                        <a 
+                          href="https://maps.google.com/?q=Rua+do+Alto+das+Mastrontas+Nº8,+2715-311+Almargem+do+Bispo"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-sm hover:text-[#00BFFF] transition-colors cursor-pointer hover:underline"
+                        >
+                          Rua do Alto das Mastrontas Nº8, 2715-311 Almargem do Bispo
+                        </a>
                       </div>
                       <div>
                         <div className="text-sm text-[#00BFFF] font-semibold">Loja:</div>
-                        <div className="text-sm">Avenida da Liberdade nº51B, 2715-001 - Pêro Pinheiro</div>
+                        <a 
+                          href="https://maps.google.com/?q=Avenida+da+Liberdade+nº51B,+2715-001+Pêro+Pinheiro"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-sm hover:text-[#00BFFF] transition-colors cursor-pointer hover:underline"
+                        >
+                          Avenida da Liberdade nº51B, 2715-001 - Pêro Pinheiro
+                        </a>
                       </div>
                     </div>
                   </div>
