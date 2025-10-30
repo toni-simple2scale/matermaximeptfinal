@@ -151,7 +151,7 @@ const ProductCatalog = () => {
               key={product.id}
               data-aos="fade-up"
               data-aos-delay={index * 50}
-              className="group bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden border border-gray-100"
+              className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-[#00BFFF] transform hover:-translate-y-2"
             >
               {/* Product Image */}
               <div className="relative h-48 overflow-hidden">
