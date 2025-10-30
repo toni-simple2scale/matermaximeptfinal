@@ -104,7 +104,7 @@ const NovaLojaSection = () => {
             {galeriaFotos.map((foto, index) => (
               <div 
                 key={index}
-                className="relative group cursor-pointer overflow-hidden rounded-xl shadow-md hover:shadow-2xl transition-all duration-300"
+                className="relative group cursor-pointer overflow-hidden rounded-xl shadow-md hover:shadow-2xl transition-all duration-300 transform hover:scale-105 hover:z-10"
                 onClick={() => setSelectedImage(foto)}
               >
                 <img 
@@ -112,6 +112,9 @@ const NovaLojaSection = () => {
                   alt={foto.alt}
                   className="w-full h-80 object-cover transform group-hover:scale-110 transition-transform duration-500"
                 />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#00BFFF]/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                  <div className="text-white text-lg font-bold">Ver Imagem</div>
+                </div>
               </div>
             ))}
           </div>
