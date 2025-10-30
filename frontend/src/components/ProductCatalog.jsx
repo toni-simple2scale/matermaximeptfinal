@@ -135,6 +135,38 @@ const ProductCatalog = () => {
     }
   ];
 
+  // Filter products based on search term
+  const filteredProducts = useMemo(() => {
+    if (!searchTerm.trim()) {
+      return products;
+    }
+
+    const searchLower = removeAccents(searchTerm.toLowerCase());
+    
+    return products.filter(product => {
+      // Search in title
+      const titleMatch = removeAccents(product.title.toLowerCase()).includes(searchLower);
+      
+      // Search in description
+      const descriptionMatch = removeAccents(product.description.toLowerCase()).includes(searchLower);
+      
+      // Search in items
+      const itemsMatch = product.items.some(item => 
+        removeAccents(item.toLowerCase()).includes(searchLower)
+      );
+      
+      return titleMatch || descriptionMatch || itemsMatch;
+    });
+  }, [searchTerm, products]);
+
+  const handleSearchChange = (value) => {
+    setSearchTerm(value);
+  };
+
+  const handleClearSearch = () => {
+    setSearchTerm('');
+  };
+
   return (
     <section id="produtos" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -151,6 +183,14 @@ const ProductCatalog = () => {
             garantindo qualidade e resistência para a sua obra.
           </p>
         </div>
+
+        {/* Search Bar */}
+        <SearchBar 
+          searchTerm={searchTerm}
+          onSearchChange={handleSearchChange}
+          onClear={handleClearSearch}
+          resultsCount={filteredProducts.length}
+        />
 
         {/* Products Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
