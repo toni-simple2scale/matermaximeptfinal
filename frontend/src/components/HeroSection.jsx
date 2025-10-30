@@ -143,7 +143,7 @@ const HeroSection = () => {
                     value={formData.name}
                     onChange={handleInputChange}
                     required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-[#00BFFF] focus:border-[#00BFFF] transition-all duration-200"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-[#00BFFF] focus:border-[#00BFFF] hover:border-[#00BFFF]/50 transition-all duration-200"
                   />
                 </div>
                 
@@ -155,7 +155,7 @@ const HeroSection = () => {
                     value={formData.phone}
                     onChange={handleInputChange}
                     required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-[#00BFFF] focus:border-[#00BFFF] transition-all duration-200"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-[#00BFFF] focus:border-[#00BFFF] hover:border-[#00BFFF]/50 transition-all duration-200"
                   />
                 </div>
                 
@@ -167,7 +167,7 @@ const HeroSection = () => {
                     value={formData.email}
                     onChange={handleInputChange}
                     required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-[#00BFFF] focus:border-[#00BFFF] transition-all duration-200"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-[#00BFFF] focus:border-[#00BFFF] hover:border-[#00BFFF]/50 transition-all duration-200"
                   />
                 </div>
                 
