@@ -54,25 +54,25 @@ const BusinessHours = () => {
               </h3>
 
               <div className="space-y-6">
-                <div className="flex items-center p-4 bg-gradient-to-r from-[#00BFFF]/5 to-blue-50 rounded-xl border border-[#00BFFF]/10">
-                  <div className="w-12 h-12 bg-[#00BFFF]/10 rounded-full flex items-center justify-center mr-4">
+                <a href="tel:+351219279178" className="flex items-center p-4 bg-gradient-to-r from-[#00BFFF]/5 to-blue-50 rounded-xl border border-[#00BFFF]/10 hover:shadow-lg transition-all group">
+                  <div className="w-12 h-12 bg-[#00BFFF]/10 rounded-full flex items-center justify-center mr-4 group-hover:bg-[#00BFFF]/20 transition-colors">
                     <Phone className="h-6 w-6 text-[#00BFFF]" />
                   </div>
                   <div>
                     <div className="text-sm text-gray-600 mb-1">Telefone Principal</div>
-                    <div className="font-bold text-gray-900 text-lg">{companyInfo.phone}</div>
+                    <div className="font-bold text-gray-900 text-lg group-hover:text-[#00BFFF] transition-colors">{companyInfo.phone}</div>
                   </div>
-                </div>
+                </a>
 
-                <div className="flex items-center p-4 bg-gradient-to-r from-[#00BFFF]/5 to-blue-50 rounded-xl border border-[#00BFFF]/10">
-                  <div className="w-12 h-12 bg-[#00BFFF]/10 rounded-full flex items-center justify-center mr-4">
+                <a href={`mailto:${companyInfo.email}`} className="flex items-center p-4 bg-gradient-to-r from-[#00BFFF]/5 to-blue-50 rounded-xl border border-[#00BFFF]/10 hover:shadow-lg transition-all group">
+                  <div className="w-12 h-12 bg-[#00BFFF]/10 rounded-full flex items-center justify-center mr-4 group-hover:bg-[#00BFFF]/20 transition-colors">
                     <Mail className="h-6 w-6 text-[#00BFFF]" />
                   </div>
                   <div>
                     <div className="text-sm text-gray-600 mb-1">Email</div>
-                    <div className="font-bold text-gray-900 text-lg">{companyInfo.email}</div>
+                    <div className="font-bold text-gray-900 text-lg group-hover:text-[#00BFFF] transition-colors break-all">{companyInfo.email}</div>
                   </div>
-                </div>
+                </a>
 
                 <div className="flex items-start p-4 bg-gradient-to-r from-[#00BFFF]/5 to-blue-50 rounded-xl border border-[#00BFFF]/10">
                   <div className="w-12 h-12 bg-[#00BFFF]/10 rounded-full flex items-center justify-center mr-4 mt-1">
