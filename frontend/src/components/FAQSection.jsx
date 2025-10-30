@@ -30,7 +30,7 @@ const FAQSection = () => {
               <AccordionItem 
                 key={faq.id} 
                 value={`item-${faq.id}`}
-                className="bg-gradient-to-r from-gray-50 to-blue-50/30 rounded-2xl border border-gray-200/50 shadow-sm hover:shadow-lg transition-all duration-300 px-6"
+                className="bg-gradient-to-r from-gray-50 to-blue-50/30 rounded-2xl border border-gray-200/50 shadow-sm hover:shadow-xl hover:border-[#00BFFF]/50 transition-all duration-300 px-6 transform hover:scale-[1.02]"
               >
                 <AccordionTrigger className="text-left text-lg font-semibold text-gray-900 hover:text-[#00BFFF] transition-colors duration-200 py-6">
                   {faq.question}
