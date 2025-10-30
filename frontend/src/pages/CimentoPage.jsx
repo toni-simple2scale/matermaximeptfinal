@@ -105,16 +105,19 @@ const CimentoPage = () => {
           <Link 
             to="/#produto-2" 
             className="inline-flex items-center text-gray-600 hover:text-[#00BFFF] transition-colors duration-200 mb-4"
+            data-aos="fade-right"
           >
             <ArrowLeft className="h-4 w-4 mr-2" />
             Voltar ao Catálogo
           </Link>
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            <span className="text-[#00BFFF]">Cimentos</span> e Rebocos
-          </h1>
-          <p className="text-xl text-gray-600 max-w-3xl">
-            Cimentos e Rebocos de alta qualidade das melhores marcas.
-          </p>
+          <div data-aos="fade-down">
+            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+              <span className="text-[#00BFFF]">Cimentos</span> e Rebocos
+            </h1>
+            <p className="text-xl text-gray-600 max-w-3xl">
+              Cimentos e Rebocos de alta qualidade das melhores marcas.
+            </p>
+          </div>
         </div>
       </div>
 
@@ -124,7 +127,12 @@ const CimentoPage = () => {
           <div className="lg:col-span-2">
             <div className="grid gap-6">
               {cimentos.map((product, index) => (
-                <div key={index} className="bg-white rounded-2xl shadow-lg border border-gray-100 p-6 hover:shadow-xl transition-all duration-300">
+                <div 
+                  key={index} 
+                  className="bg-white rounded-2xl shadow-lg border border-gray-100 p-6 hover:shadow-xl transition-all duration-300"
+                  data-aos="fade-up"
+                  data-aos-delay={index * 100}
+                >
                   <div className="grid md:grid-cols-2 gap-6">
                     <div>
                       <h3 className="text-2xl font-bold text-gray-900 mb-3">{product.name}</h3>
