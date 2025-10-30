@@ -194,7 +194,21 @@ const ProductCatalog = () => {
 
         {/* Products Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-          {products.map((product, index) => (
+          {filteredProducts.length === 0 ? (
+            <div className="col-span-full text-center py-16">
+              <div className="inline-block p-6 bg-gray-50 rounded-2xl">
+                <p className="text-xl text-gray-600 mb-2">🔍 Nenhum produto encontrado</p>
+                <p className="text-gray-500">Tente pesquisar por outros termos ou</p>
+                <button 
+                  onClick={handleClearSearch}
+                  className="mt-4 text-[#00BFFF] hover:text-[#0099CC] font-semibold underline"
+                >
+                  limpe a pesquisa para ver todos os produtos
+                </button>
+              </div>
+            </div>
+          ) : (
+            filteredProducts.map((product, index) => (
             <div
               key={product.id}
               id={`produto-${product.id}`}
