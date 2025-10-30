@@ -197,7 +197,7 @@ const CimentoPage = () => {
 
           {/* Quote Form Sidebar */}
           <div>
-            <div className="bg-white rounded-2xl shadow-xl border border-gray-200 p-6 sticky top-6">
+            <div className="bg-white rounded-2xl shadow-xl border border-gray-200 p-6 sticky top-6" data-aos="fade-left">
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Pedir Orçamento</h3>
               <p className="text-gray-600 mb-6">Receba uma proposta personalizada para cimentos e rebocos</p>
               
