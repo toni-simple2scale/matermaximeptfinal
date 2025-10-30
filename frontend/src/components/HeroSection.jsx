@@ -15,24 +15,24 @@ const HeroSection = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     
-    // Send to backend
-    fetch(`${process.env.REACT_APP_BACKEND_URL}/api/send-quote`, {
+    // Prepare form data for Web3Forms
+    const web3FormData = new FormData();
+    web3FormData.append('access_key', process.env.REACT_APP_WEB3FORMS_ACCESS_KEY);
+    web3FormData.append('name', formData.name);
+    web3FormData.append('phone', formData.phone);
+    web3FormData.append('email', formData.email);
+    web3FormData.append('message', formData.message);
+    web3FormData.append('subject', 'Novo Pedido de Orçamento - Website Matermaxime');
+    web3FormData.append('from_name', 'Website Matermaxime');
+    
+    // Send to Web3Forms
+    fetch('https://api.web3forms.com/submit', {
       method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        name: formData.name,
-        phone: formData.phone,
-        email: formData.email,
-        product: 'Pedido Geral',
-        quantity: '',
-        message: formData.message
-      })
+      body: web3FormData
     })
     .then(response => response.json())
     .then(data => {
-      if (data.status === 'success') {
+      if (data.success) {
         alert('Pedido de orçamento enviado com sucesso! Entraremos em contacto brevemente.');
         setFormData({ name: '', phone: '', email: '', message: '' });
       } else {
