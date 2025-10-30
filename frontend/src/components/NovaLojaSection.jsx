@@ -80,10 +80,15 @@ const NovaLojaSection = () => {
               <MapPin className="h-8 w-8 text-[#00BFFF]" />
             </div>
             <h3 className="text-xl font-bold text-gray-900 mb-3 text-center">Localização</h3>
-            <p className="text-gray-600 text-center">
+            <a 
+              href="https://maps.google.com/?q=Avenida+da+Liberdade+nº51B,+2715-001+Pêro+Pinheiro"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-600 text-center block hover:text-[#00BFFF] transition-colors cursor-pointer hover:underline"
+            >
               Avenida da Liberdade nº51B<br />
               2715-001 - Pêro Pinheiro
-            </p>
+            </a>
           </div>
         </div>
 
