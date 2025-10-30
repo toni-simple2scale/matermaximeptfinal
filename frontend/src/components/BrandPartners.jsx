@@ -38,7 +38,7 @@ const BrandPartners = () => {
         </div>
 
         {/* Benefits Section */}
-        <div className="bg-gradient-to-br from-gray-50 to-blue-50 rounded-3xl p-8 md:p-12">
+        <div className="bg-gradient-to-br from-gray-50 to-blue-50 rounded-3xl p-8 md:p-12" data-aos="fade-up">
           <div className="text-center mb-8">
             <h3 className="text-3xl font-bold text-gray-900 mb-4">
               Vantagens dos Nossos <span className="text-[#00BFFF]">Parceiros</span>
