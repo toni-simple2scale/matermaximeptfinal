@@ -79,14 +79,14 @@ const FleetSection = () => {
           {/* Fleet Stats */}
           <div className="space-y-8" data-aos="fade-left">
             <div className="grid grid-cols-2 gap-6">
-              <div className="bg-white/70 backdrop-blur-sm rounded-2xl p-6 text-center shadow-lg border border-gray-200/50">
-                <Clock className="h-8 w-8 text-[#00BFFF] mx-auto mb-3" />
-                <div className="text-2xl font-bold text-gray-900 mb-1">24h</div>
+              <div className="bg-white/70 backdrop-blur-sm rounded-2xl p-6 text-center shadow-lg border border-gray-200/50 hover:border-[#00BFFF] hover:shadow-xl transition-all duration-300 transform hover:scale-105 cursor-pointer group">
+                <Clock className="h-8 w-8 text-[#00BFFF] mx-auto mb-3 group-hover:scale-110 transition-transform" />
+                <div className="text-2xl font-bold text-gray-900 mb-1 group-hover:text-[#00BFFF] transition-colors">24h</div>
                 <div className="text-sm text-gray-600">Entrega Garantida</div>
               </div>
-              <div className="bg-white/70 backdrop-blur-sm rounded-2xl p-6 text-center shadow-lg border border-gray-200/50">
-                <MapPin className="h-8 w-8 text-[#00BFFF] mx-auto mb-3" />
-                <div className="text-2xl font-bold text-gray-900 mb-1">50km</div>
+              <div className="bg-white/70 backdrop-blur-sm rounded-2xl p-6 text-center shadow-lg border border-gray-200/50 hover:border-[#00BFFF] hover:shadow-xl transition-all duration-300 transform hover:scale-105 cursor-pointer group">
+                <MapPin className="h-8 w-8 text-[#00BFFF] mx-auto mb-3 group-hover:scale-110 transition-transform" />
+                <div className="text-2xl font-bold text-gray-900 mb-1 group-hover:text-[#00BFFF] transition-colors">50km</div>
                 <div className="text-sm text-gray-600">Raio de Entrega</div>
               </div>
             </div>
