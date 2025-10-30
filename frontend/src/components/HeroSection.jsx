@@ -34,16 +34,18 @@ const HeroSection = () => {
     })
     .then(response => response.json())
     .then(data => {
+      setIsSubmitting(false);
       if (data.success) {
-        alert('Pedido de orçamento enviado com sucesso! Entraremos em contacto brevemente.');
+        alert('✅ Pedido de orçamento enviado com sucesso! Entraremos em contacto brevemente.');
         setFormData({ name: '', phone: '', email: '', message: '' });
       } else {
-        alert('Erro ao enviar pedido. Por favor, tente novamente ou contacte-nos diretamente.');
+        alert('❌ Erro ao enviar pedido. Por favor, tente novamente ou contacte-nos diretamente.');
       }
     })
     .catch(error => {
+      setIsSubmitting(false);
       console.error('Error:', error);
-      alert('Erro ao enviar pedido. Por favor, tente novamente ou contacte-nos diretamente.');
+      alert('❌ Erro ao enviar pedido. Por favor, tente novamente ou contacte-nos diretamente.');
     });
   };
 
