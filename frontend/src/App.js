@@ -74,7 +74,6 @@ function App() {
       <BrowserRouter>
         <ScrollToTop />
         <BackToTop />
-        <StickyCTA />
         {isLoading && <LoadingSpinner />}
         <Suspense fallback={<LoadingSpinner />}>
           <Routes>
