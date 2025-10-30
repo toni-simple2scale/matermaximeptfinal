@@ -1,9 +1,12 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState, Suspense } from "react";
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import ScrollToTop from "./components/ScrollToTop";
+import BackToTop from "./components/BackToTop";
+import StickyCTA from "./components/StickyCTA";
+import LoadingSpinner from "./components/LoadingSpinner";
 import Header from "./components/Header";
 import HeroSection from "./components/HeroSection";
 import ProductCatalog from "./components/ProductCatalog";
