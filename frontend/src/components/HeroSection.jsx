@@ -11,9 +11,11 @@ const HeroSection = () => {
     email: '',
     message: ''
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    setIsSubmitting(true);
     
     // Prepare form data for Web3Forms
     const web3FormData = new FormData();
