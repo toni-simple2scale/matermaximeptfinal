@@ -43,7 +43,7 @@ const FleetSection = () => {
     <section id="frota" className="py-20 bg-gradient-to-br from-gray-50 to-blue-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-16" data-aos="fade-down">
           <div className="inline-flex items-center px-4 py-2 bg-[#00BFFF]/10 rounded-full border border-[#00BFFF]/20 mb-4">
             <Truck className="h-4 w-4 text-[#00BFFF] mr-2" />
             <span className="text-sm font-medium text-[#00BFFF]">Frota e Entrega</span>
