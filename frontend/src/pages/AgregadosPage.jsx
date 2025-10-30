@@ -111,12 +111,13 @@ const AgregadosPage = () => {
             Voltar ao Catálogo
           </Link>
           <div data-aos="fade-down">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            <span className="text-[#00BFFF]">Agregados</span> para Construção
-          </h1>
-          <p className="text-xl text-gray-600 max-w-3xl">
-            Areias, britas e cascalho de diferentes granulometrias para todas as aplicações construtivas.
-          </p>
+            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+              <span className="text-[#00BFFF]">Agregados</span> para Construção
+            </h1>
+            <p className="text-xl text-gray-600 max-w-3xl">
+              Areias, britas e cascalho de diferentes granulometrias para todas as aplicações construtivas.
+            </p>
+          </div>
         </div>
       </div>
 
