@@ -188,9 +188,17 @@ const HeroSection = () => {
                 
                 <Button 
                   type="submit" 
-                  className="w-full bg-[#00BFFF] hover:bg-[#0099CC] text-white py-3 px-6 rounded-xl font-semibold transition-all duration-300 shadow-lg hover:shadow-2xl transform hover:scale-105"
+                  disabled={isSubmitting}
+                  className="w-full bg-[#00BFFF] hover:bg-[#0099CC] text-white py-3 px-6 rounded-xl font-semibold transition-all duration-300 shadow-lg hover:shadow-2xl transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100 flex items-center justify-center gap-2"
                 >
-                  Solicitar Orçamento
+                  {isSubmitting ? (
+                    <>
+                      <div className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
+                      <span>A enviar...</span>
+                    </>
+                  ) : (
+                    'Solicitar Orçamento'
+                  )}
                 </Button>
                 
                 <p className="text-xs text-gray-500 text-center mt-3">
