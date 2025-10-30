@@ -80,10 +80,10 @@ const Header = () => {
                 </a>
               ))}
               <div className="px-3 py-2 border-t border-gray-200 mt-2">
-                <div className="flex items-center mb-2">
+                <a href="tel:+351219279178" className="flex items-center mb-2 hover:text-[#00BFFF] transition-colors">
                   <Phone className="h-4 w-4 mr-2 text-[#00BFFF]" />
                   <span className="text-gray-700">+351 21 927 9178</span>
-                </div>
+                </a>
                 <Button className="w-full bg-[#00BFFF] hover:bg-[#0099CC] text-white">
                   Pedir Orçamento
                 </Button>
