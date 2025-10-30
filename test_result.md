@@ -413,6 +413,22 @@ agent_communication:
     needs_retesting: false
     status_history:
         -working: true
+
+  - task: "TintasPage - Correção de Erros JSX"
+    implemented: true
+    working: true
+    file: "/app/frontend/src/pages/TintasPage.jsx"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: false
+    status_history:
+        -working: false
+        -agent: "user"
+        -comment: "Usuário reportou que a página de Tintas estava com erros"
+        -working: true
+        -agent: "main"
+        -comment: "Corrigidos erros de sintaxe JSX nas linhas 247 e 254. Problema: atributos className estavam quebrados com data-aos no meio. Linha 247: 'bg-blue-50 rounded-lg' data-aos='fade-up'> border border-blue-200' (incorreto) -> 'bg-blue-50 rounded-lg border border-blue-200' data-aos='fade-up' (correto). Linha 254: similar. Site compilou com sucesso após correção. Página testada e funcionando em desktop e mobile."
+
         -agent: "main"
         -comment: "Adicionadas animações AOS (Animate On Scroll) em todas as 18 páginas de produtos. Animações implementadas: data-aos='fade-right' no link 'Voltar ao Catálogo', data-aos='fade-down' no cabeçalho (título + descrição), data-aos='fade-up' nos cards de produtos com delay incremental (data-aos-delay={index * 100}), data-aos='fade-left' no formulário de orçamento lateral, data-aos='fade-up' nas seções adicionais ('E mais opções' e informações técnicas). Correções aplicadas para garantir estrutura JSX correta. Todas as páginas compiladas com sucesso após correções."
 
