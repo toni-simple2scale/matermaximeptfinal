@@ -77,7 +77,7 @@ const FleetSection = () => {
           </div>
 
           {/* Fleet Stats */}
-          <div className="space-y-8">
+          <div className="space-y-8" data-aos="fade-left">
             <div className="grid grid-cols-2 gap-6">
               <div className="bg-white/70 backdrop-blur-sm rounded-2xl p-6 text-center shadow-lg border border-gray-200/50">
                 <Clock className="h-8 w-8 text-[#00BFFF] mx-auto mb-3" />
