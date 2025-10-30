@@ -165,10 +165,12 @@ const FerramentasPage = () => {
           <Link 
             to="/#produto-12" 
             className="inline-flex items-center text-gray-600 hover:text-[#00BFFF] transition-colors duration-200 mb-4"
+            data-aos="fade-right"
           >
             <ArrowLeft className="h-4 w-4 mr-2" />
             Voltar ao Catálogo
           </Link>
+          <div data-aos="fade-down">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
             <span className="text-[#00BFFF]">Ferramentas</span> e Equipamentos
           </h1>
@@ -184,7 +186,9 @@ const FerramentasPage = () => {
           <div className="lg:col-span-2">
             <div className="grid gap-6">
               {ferramentas.map((product, index) => (
-                <div key={index} className="bg-white rounded-2xl shadow-lg border border-gray-100 p-6 hover:shadow-xl transition-all duration-300">
+                <div key={index} className="bg-white rounded-2xl
+                  data-aos="fade-up"
+                  data-aos-delay={index * 100} shadow-lg border border-gray-100 p-6 hover:shadow-xl transition-all duration-300">
                   <div className="grid md:grid-cols-2 gap-6">
                     <div>
                       <h3 className="text-2xl font-bold text-gray-900 mb-3">{product.name}</h3>
@@ -208,7 +212,7 @@ const FerramentasPage = () => {
             </div>
             
             {/* Additional Options Note */}
-            <div className="mt-8 p-4 bg-blue-50 rounded-lg border border-blue-200">
+            <div className="mt-8 p-4 bg-blue-50 rounded-lg" data-aos="fade-up"> border border-blue-200">
               <p className="text-center text-gray-700 font-medium">
                 E mais opções sob consulta
               </p>
@@ -219,7 +223,7 @@ const FerramentasPage = () => {
 
           {/* Quote Form Sidebar */}
           <div>
-            <div className="bg-white rounded-2xl shadow-xl border border-gray-200 p-6 sticky top-6">
+            <div className="bg-white rounded-2xl shadow-xl border border-gray-200 p-6 sticky top-6" data-aos="fade-left">
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Pedir Orçamento</h3>
               <p className="text-gray-600 mb-6">Receba uma proposta personalizada para ferramentas e equipamentos</p>
               
