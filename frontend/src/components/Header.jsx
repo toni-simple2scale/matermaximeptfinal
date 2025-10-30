@@ -43,10 +43,10 @@ const Header = () => {
 
           {/* Contact Button */}
           <div className="hidden md:flex items-center space-x-4">
-            <div className="flex items-center text-gray-700">
+            <a href="tel:+351219279178" className="flex items-center text-gray-700 hover:text-[#00BFFF] transition-colors">
               <Phone className="h-4 w-4 mr-2 text-[#00BFFF]" />
               <span className="font-medium">+351 21 927 9178</span>
-            </div>
+            </a>
             <a href="#hero">
               <Button className="bg-[#00BFFF] hover:bg-[#0099CC] text-white px-6 py-2 rounded-lg transition-all duration-300 shadow-md hover:shadow-lg">
                 Pedir Orçamento
