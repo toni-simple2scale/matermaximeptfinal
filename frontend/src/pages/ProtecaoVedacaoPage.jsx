@@ -158,9 +158,7 @@ const ProtecaoVedacaoPage = () => {
                 </h2>
                 <div className="grid gap-6">
                   {section.products.map((product, index) => (
-                    <div key={index} className="bg-white rounded-2xl
-                  data-aos="fade-up"
-                  data-aos-delay={index * 100} shadow-lg border border-gray-100 p-6 hover:shadow-xl transition-all duration-300">
+                    <div key={index} className="bg-white rounded-2xl shadow-lg border border-gray-100 p-6 hover:shadow-xl transition-all duration-300" data-aos="fade-up" data-aos-delay={index * 100}>
                       <div className="grid md:grid-cols-2 gap-6">
                         <div>
                           <h3 className="text-2xl font-bold text-gray-900 mb-3">{product.name}</h3>
