@@ -149,6 +149,7 @@ const ProductCatalog = () => {
           {products.map((product, index) => (
             <div
               key={product.id}
+              id={`produto-${product.id}`}
               data-aos="fade-up"
               data-aos-delay={index * 50}
               className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-[#00BFFF] transform hover:-translate-y-2"
