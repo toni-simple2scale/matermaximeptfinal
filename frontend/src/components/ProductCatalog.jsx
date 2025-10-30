@@ -146,9 +146,11 @@ const ProductCatalog = () => {
 
         {/* Products Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-          {products.map((product) => (
+          {products.map((product, index) => (
             <div
               key={product.id}
+              data-aos="fade-up"
+              data-aos-delay={index * 50}
               className="group bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden border border-gray-100"
             >
               {/* Product Image */}
