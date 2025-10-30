@@ -123,12 +123,13 @@ const TubagensPage = () => {
             Voltar ao Catálogo
           </Link>
           <div data-aos="fade-down">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
             <span className="text-[#00BFFF]">Saneamento</span> e Esgotos
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl">
             Tubagens, sistemas de drenagem e soluções completas para saneamento básico.
           </p>
+          </div>
         </div>
       </div>
 

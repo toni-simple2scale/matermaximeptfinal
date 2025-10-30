@@ -105,12 +105,13 @@ const PreMoldadosPage = () => {
             Voltar ao Catálogo
           </Link>
           <div data-aos="fade-down">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
             <span className="text-[#00BFFF]">Pré-moldados</span> de Betão
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl">
             Elementos pré-fabricados de betão armado para construção civil e obras de infraestrutura.
           </p>
+          </div>
         </div>
       </div>
 

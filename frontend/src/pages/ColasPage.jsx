@@ -147,12 +147,13 @@ const ColasPage = () => {
             Voltar ao Catálogo
           </Link>
           <div data-aos="fade-down">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
             <span className="text-[#00BFFF]">Colas</span>, Selantes e Vedantes
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl">
             Produtos especializados para vedação, colagem e fixação em todas as aplicações da construção.
           </p>
+          </div>
         </div>
       </div>
 

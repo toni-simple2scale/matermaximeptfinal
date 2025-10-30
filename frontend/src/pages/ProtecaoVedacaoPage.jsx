@@ -138,12 +138,13 @@ const ProtecaoVedacaoPage = () => {
             Voltar ao Catálogo
           </Link>
           <div data-aos="fade-down">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
             <span className="text-[#00BFFF]">Proteção</span> e Vedação
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl">
             Soluções completas em redes, telas e mangas plásticas para proteção, vedação e delimitação.
           </p>
+          </div>
         </div>
       </div>
 

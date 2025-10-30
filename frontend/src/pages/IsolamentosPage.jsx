@@ -159,12 +159,13 @@ const IsolamentosPage = () => {
             Voltar ao Catálogo
           </Link>
           <div data-aos="fade-down">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
             <span className="text-[#00BFFF]">Isolamentos</span> Térmicos e Acústicos
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl">
             Soluções completas de isolamento térmico, acústico e impermeabilização para todo tipo de construção.
           </p>
+          </div>
         </div>
       </div>
 

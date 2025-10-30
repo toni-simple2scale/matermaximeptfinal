@@ -48,12 +48,13 @@ const SaneamentoPage = () => {
             Voltar ao Catálogo
           </Link>
           <div data-aos="fade-down">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
             <span className="text-[#00BFFF]">Saneamento</span> e Esgotos
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl">
             Soluções completas para sistemas de saneamento, drenagem e redes de esgotos.
           </p>
+          </div>
         </div>
       </div>
 

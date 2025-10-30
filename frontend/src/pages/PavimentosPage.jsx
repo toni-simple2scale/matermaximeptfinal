@@ -183,12 +183,13 @@ const PavimentosPage = () => {
             Voltar ao Catálogo
           </Link>
           <div data-aos="fade-down">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
             <span className="text-[#00BFFF]">Pavimentos</span> Clássicos e Técnicos
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl">
             Soluções completas em pavimentos para exterior, desde blocos clássicos a sistemas drenantes e ecológicos.
           </p>
+          </div>
         </div>
       </div>
 

@@ -117,12 +117,13 @@ const EletrodomesticosPage = () => {
             Voltar ao Catálogo
           </Link>
           <div data-aos="fade-down">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
             <span className="text-[#00BFFF]">Eletrodomésticos</span>
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl">
             Equipamentos de qualidade para a sua cozinha, com tecnologia de ponta e design moderno.
           </p>
+          </div>
         </div>
       </div>
 

@@ -130,12 +130,13 @@ const FerroPage = () => {
             Voltar ao Catálogo
           </Link>
           <div data-aos="fade-down">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
             <span className="text-[#00BFFF]">Ferragens</span> para Construção
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl">
             Varões, estribos, pregos, arame e outras ferragens de ferro para todas as aplicações estruturais e de construção.
           </p>
+          </div>
         </div>
       </div>
 
