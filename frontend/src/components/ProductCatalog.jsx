@@ -131,7 +131,7 @@ const ProductCatalog = () => {
     <section id="produtos" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-16" data-aos="fade-down">
           <div className="inline-flex items-center px-4 py-2 bg-[#00BFFF]/10 rounded-full border border-[#00BFFF]/20 mb-4">
             <span className="text-sm font-medium text-[#00BFFF]">Catálogo de Produtos</span>
           </div>
