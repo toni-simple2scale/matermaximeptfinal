@@ -23,9 +23,11 @@ const TestimonialsSection = () => {
 
         {/* Testimonials Grid */}
         <div className="grid md:grid-cols-2 gap-8 mb-12">
-          {testimonials.map((testimonial) => (
+          {testimonials.map((testimonial, index) => (
             <div
               key={testimonial.id}
+              data-aos="fade-up"
+              data-aos-delay={index * 100}
               className="bg-white/80 backdrop-blur-sm rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-500 border border-gray-200/50 hover:border-[#00BFFF]/20 transform hover:-translate-y-2"
             >
               {/* Quote */}
