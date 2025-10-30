@@ -261,7 +261,8 @@ const ProductCatalog = () => {
                 </Link>
               </div>
             </div>
-          ))}
+          ))
+          )}
         </div>
 
         {/* CTA Section */}
