@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import Header from "./components/Header";
 import HeroSection from "./components/HeroSection";
 import ProductCatalog from "./components/ProductCatalog";
