@@ -103,7 +103,7 @@ const CimentoPage = () => {
       <div className="bg-gradient-to-r from-[#00BFFF]/5 to-blue-50 py-8">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <Link 
-            to="/#produtos" 
+            to="/#produto-2" 
             className="inline-flex items-center text-gray-600 hover:text-[#00BFFF] transition-colors duration-200 mb-4"
           >
             <ArrowLeft className="h-4 w-4 mr-2" />
