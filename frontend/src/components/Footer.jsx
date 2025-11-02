@@ -157,9 +157,15 @@ const Footer = () => {
               © {currentYear} {companyInfo.name} - Todos os direitos reservados.
             </div>
             <div className="flex space-x-6 text-sm text-gray-400">
-              <a href="#" className="hover:text-white transition-colors duration-200">Política de Privacidade</a>
-              <a href="#" className="hover:text-white transition-colors duration-200">Termos de Serviço</a>
-              <a href="#" className="hover:text-white transition-colors duration-200">Contactos</a>
+              {legalLinks.map((link, index) => (
+                <a 
+                  key={index}
+                  href={link.href} 
+                  className="hover:text-white transition-colors duration-200"
+                >
+                  {link.label}
+                </a>
+              ))}
             </div>
           </div>
         </div>
