@@ -35,21 +35,21 @@ const CookieBanner = () => {
 
   return (
     <>
-      {/* Backdrop */}
-      <div className="fixed inset-0 bg-black/60 z-[100]" onClick={handleClose} />
+      {/* Backdrop with Blur */}
+      <div className="fixed inset-0 bg-black/60 backdrop-blur-sm z-[100]" onClick={handleClose} />
 
-      {/* Cookie Banner Modal */}
-      <div className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[90%] max-w-4xl bg-white rounded-2xl shadow-2xl z-[101] animate-slideUp">
+      {/* Cookie Banner Modal - Bottom Position */}
+      <div className="fixed bottom-0 left-0 right-0 w-full bg-white rounded-t-3xl shadow-2xl z-[101] animate-slideUp max-h-[90vh] overflow-y-auto">
         {/* Close Button */}
         <button
           onClick={handleClose}
-          className="absolute top-4 right-4 text-gray-400 hover:text-gray-600 transition-colors"
+          className="absolute top-6 right-6 text-gray-400 hover:text-gray-600 transition-colors"
           aria-label="Fechar"
         >
           <X className="h-6 w-6" />
         </button>
 
-        <div className="p-8 md:p-10">
+        <div className="max-w-5xl mx-auto p-6 md:p-10">
           {/* Header */}
           <div className="flex items-start gap-4 mb-6">
             <div className="bg-[#00BFFF]/10 p-3 rounded-full">
