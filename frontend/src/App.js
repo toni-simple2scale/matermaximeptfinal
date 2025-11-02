@@ -100,8 +100,11 @@ function App() {
             <Route path="/produtos/banho" element={<BanhoPage />} />
             <Route path="/produtos/tintas" element={<TintasPage />} />
             <Route path="/produtos/eletrodomesticos" element={<EletrodomesticosPage />} />
+            <Route path="/politica-privacidade" element={<PrivacyPolicyPage />} />
+            <Route path="/politica-cookies" element={<CookiePolicyPage />} />
           </Routes>
         </Suspense>
+        <CookieBanner />
       </BrowserRouter>
       <Toaster position="top-right" />
     </div>
