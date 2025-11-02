@@ -164,8 +164,7 @@ const PrivacyPolicyPage = () => {
             <ul className="list-disc pl-6 space-y-2 text-gray-700">
               <li><strong>Pedidos de orçamento:</strong> Conservados durante 2 anos após o último contacto</li>
               <li><strong>Dados de clientes:</strong> Conservados durante 10 anos (obrigações fiscais e legais)</li>
-              <li><strong>Cookies de análise:</strong> Dados anónimos conservados durante 26 meses</li>
-              <li><strong>Dados de navegação:</strong> Logs conservados durante 12 meses</li>
+              <li><strong>Dados de navegação (Vercel Analytics):</strong> Dados anónimos e agregados (sem prazo de eliminação pois não são pessoais)</li>
             </ul>
             <p className="text-gray-700 mt-4">
               Após estes prazos, os dados são eliminados ou anonimizados, exceto quando a lei exigir a sua conservação por período superior.
