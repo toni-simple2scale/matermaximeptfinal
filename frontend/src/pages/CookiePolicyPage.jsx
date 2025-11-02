@@ -135,14 +135,14 @@ const CookiePolicyPage = () => {
           <section className="mb-12">
             <h2 className="text-2xl font-bold text-gray-900 mb-4">4. Cookies de Terceiros</h2>
             <p className="text-gray-700 mb-4">
-              Utilizamos os seguintes serviços de terceiros que podem definir cookies:
+              Utilizamos os seguintes serviços de terceiros:
             </p>
             <ul className="list-disc pl-6 space-y-2 text-gray-700">
-              <li><strong>PostHog (us.i.posthog.com):</strong> Análise de website</li>
+              <li><strong>Vercel Analytics:</strong> Analytics sem cookies - 100% privado e conforme RGPD</li>
               <li><strong>Web3Forms:</strong> Processamento de formulários (não utiliza cookies)</li>
             </ul>
             <p className="text-gray-700 mt-4">
-              Estes serviços têm as suas próprias políticas de privacidade e cookies.
+              <strong>Nenhum destes serviços recolhe dados pessoais identificáveis ou utiliza cookies de tracking.</strong>
             </p>
           </section>
 
