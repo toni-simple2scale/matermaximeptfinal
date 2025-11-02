@@ -7,6 +7,7 @@ import ScrollToTop from "./components/ScrollToTop";
 import BackToTop from "./components/BackToTop";
 import StickyCTA from "./components/StickyCTA";
 import LoadingSpinner from "./components/LoadingSpinner";
+import CookieBanner from "./components/CookieBanner";
 import Header from "./components/Header";
 import HeroSection from "./components/HeroSection";
 import ProductCatalog from "./components/ProductCatalog";
@@ -38,6 +39,10 @@ import ProtecaoVedacaoPage from "./pages/ProtecaoVedacaoPage";
 import BanhoPage from "./pages/BanhoPage";
 import TintasPage from "./pages/TintasPage";
 import EletrodomesticosPage from "./pages/EletrodomesticosPage";
+
+// Legal pages
+import PrivacyPolicyPage from "./pages/PrivacyPolicyPage";
+import CookiePolicyPage from "./pages/CookiePolicyPage";
 
 const HomePage = () => {
   useEffect(() => {
