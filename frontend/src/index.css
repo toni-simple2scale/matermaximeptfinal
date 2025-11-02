@@ -16,20 +16,20 @@ code {
         monospace;
 }
 
-/* Cookie Banner Animation */
+/* Cookie Banner Animation - Slide from Bottom */
 @keyframes slideUp {
     from {
-        transform: translate(-50%, -50%) scale(0.9);
+        transform: translateY(100%);
         opacity: 0;
     }
     to {
-        transform: translate(-50%, -50%) scale(1);
+        transform: translateY(0);
         opacity: 1;
     }
 }
 
 .animate-slideUp {
-    animation: slideUp 0.3s ease-out forwards;
+    animation: slideUp 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
 
