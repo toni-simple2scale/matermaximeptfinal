@@ -14,6 +14,11 @@ const Footer = () => {
     { label: 'FAQ', href: '#faq' }
   ];
 
+  const legalLinks = [
+    { label: 'Política de Privacidade', href: '/politica-privacidade' },
+    { label: 'Política de Cookies', href: '/politica-cookies' }
+  ];
+
   const services = [
     'Entrega 24h',
     'Orçamentos Grátis',
