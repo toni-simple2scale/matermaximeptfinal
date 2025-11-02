@@ -84,7 +84,7 @@ const CookieBanner = () => {
                 <Cookie className="h-8 w-8 text-[#00BFFF] flex-shrink-0 mt-1" />
                 <div>
                   <h3 className="text-xl font-bold text-gray-900 mb-2">
-                    Este site utiliza cookies 🍪
+                    Este site utiliza cookies
                   </h3>
                   <p className="text-gray-600 text-sm leading-relaxed">
                     Utilizamos cookies para melhorar a sua experiência de navegação, analisar o tráfego do site 
