@@ -113,7 +113,7 @@ const CookieBanner = () => {
           <div className="flex flex-col sm:flex-row gap-3 mb-6">
             <button
               onClick={handleAcceptAll}
-              className="flex-1 bg-orange-500 hover:bg-orange-600 text-white font-semibold py-4 px-6 rounded-lg transition-colors duration-200 shadow-lg"
+              className="flex-1 bg-[#00BFFF] hover:bg-[#0099CC] text-white font-semibold py-4 px-6 rounded-lg transition-colors duration-200 shadow-lg"
             >
               Aceitar Todos
             </button>
@@ -125,7 +125,7 @@ const CookieBanner = () => {
             </button>
             <button
               onClick={handleEssentialOnly}
-              className="flex-1 border-2 border-orange-500 text-orange-500 hover:bg-orange-50 font-semibold py-4 px-6 rounded-lg transition-colors duration-200"
+              className="flex-1 border-2 border-[#00BFFF] text-[#00BFFF] hover:bg-[#00BFFF]/10 font-semibold py-4 px-6 rounded-lg transition-colors duration-200"
             >
               Personalizar
             </button>
@@ -134,11 +134,11 @@ const CookieBanner = () => {
           {/* Footer Links */}
           <div className="text-center text-sm text-gray-600">
             Ao continuar a navegar, concorda com a nossa{' '}
-            <Link to="/politica-privacidade" className="text-orange-500 hover:underline font-medium">
+            <Link to="/politica-privacidade" className="text-[#00BFFF] hover:underline font-medium">
               Política de Privacidade
             </Link>
             {' '}e{' '}
-            <Link to="/politica-cookies" className="text-orange-500 hover:underline font-medium">
+            <Link to="/politica-cookies" className="text-[#00BFFF] hover:underline font-medium">
               Política de Cookies
             </Link>
           </div>
