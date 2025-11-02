@@ -107,6 +107,7 @@ function App() {
         </Suspense>
         <CookieBanner />
       </BrowserRouter>
+      <Analytics />
       <Toaster position="top-right" />
     </div>
   );
