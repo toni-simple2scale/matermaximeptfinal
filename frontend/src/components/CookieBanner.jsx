@@ -52,8 +52,8 @@ const CookieBanner = () => {
         <div className="p-8 md:p-10">
           {/* Header */}
           <div className="flex items-start gap-4 mb-6">
-            <div className="bg-orange-100 p-3 rounded-full">
-              <Shield className="h-8 w-8 text-orange-500" />
+            <div className="bg-[#00BFFF]/10 p-3 rounded-full">
+              <Shield className="h-8 w-8 text-[#00BFFF]" />
             </div>
             <div className="flex-1">
               <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-3">
