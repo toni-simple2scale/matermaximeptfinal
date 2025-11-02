@@ -73,34 +73,23 @@ const CookiePolicyPage = () => {
               </div>
 
               <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
-                <h3 className="text-xl font-semibold text-gray-900 mb-3">📊 Cookies de Análise (PostHog)</h3>
+                <h3 className="text-xl font-semibold text-gray-900 mb-3">📊 Analytics (Vercel Analytics)</h3>
                 <p className="text-gray-700 mb-3">
-                  <strong>Requer Consentimento</strong> - Ajudam-nos a compreender como os visitantes utilizam o website.
+                  <strong>SEM Consentimento Necessário</strong> - Analytics 100% privados que não recolhem dados pessoais.
                 </p>
-                <table className="w-full text-sm">
-                  <thead className="bg-white">
-                    <tr>
-                      <th className="border border-gray-300 px-3 py-2 text-left">Cookie</th>
-                      <th className="border border-gray-300 px-3 py-2 text-left">Fornecedor</th>
-                      <th className="border border-gray-300 px-3 py-2 text-left">Finalidade</th>
-                      <th className="border border-gray-300 px-3 py-2 text-left">Duração</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td className="border border-gray-300 px-3 py-2">ph_*</td>
-                      <td className="border border-gray-300 px-3 py-2">PostHog</td>
-                      <td className="border border-gray-300 px-3 py-2">Análise de comportamento</td>
-                      <td className="border border-gray-300 px-3 py-2">12 meses</td>
-                    </tr>
-                  </tbody>
-                </table>
+                <div className="bg-white rounded-lg p-4">
+                  <p className="text-gray-700 mb-3">
+                    <strong>Vercel Web Analytics</strong> - Solução de analytics que respeita a privacidade:
+                  </p>
+                  <ul className="list-disc pl-6 text-sm text-gray-700 space-y-2">
+                    <li><strong>Sem cookies:</strong> Não armazena cookies no seu navegador</li>
+                    <li><strong>Dados anónimos:</strong> Não recolhe informações pessoais identificáveis</li>
+                    <li><strong>Privado por design:</strong> Conforme RGPD sem necessidade de consentimento</li>
+                    <li><strong>Informações recolhidas:</strong> Apenas métricas agregadas (páginas vistas, país de origem)</li>
+                  </ul>
+                </div>
                 <p className="text-gray-600 text-sm mt-3">
-                  <strong>Informações recolhidas:</strong> Páginas visitadas, tempo no site, cliques, 
-                  localização geográfica aproximada, tipo de dispositivo e navegador.
-                </p>
-                <p className="text-gray-600 text-sm mt-2">
-                  <strong>Dados pessoais:</strong> Apenas se consentir. Dados anonimizados por defeito.
+                  <strong>Mais informações:</strong> <a href="https://vercel.com/docs/analytics/privacy-policy" target="_blank" rel="noopener noreferrer" className="text-[#00BFFF] hover:underline">Política de Privacidade da Vercel Analytics</a>
                 </p>
               </div>
             </div>
