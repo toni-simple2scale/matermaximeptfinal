@@ -88,18 +88,18 @@ const PrivacyPolicyPage = () => {
               <li>Mensagem/especificações adicionais</li>
             </ul>
 
-            <h3 className="text-xl font-semibold text-gray-900 mb-3 mt-6">3.2. Cookies e Dados de Navegação</h3>
-            <p className="text-gray-700 mb-2">Através de cookies e tecnologias similares, podemos recolher:</p>
+            <h3 className="text-xl font-semibold text-gray-900 mb-3 mt-6">3.2. Dados de Navegação (Analytics)</h3>
+            <p className="text-gray-700 mb-2">Através do Vercel Analytics (sem cookies), recolhemos dados anónimos:</p>
             <ul className="list-disc pl-6 space-y-2 text-gray-700">
-              <li>Endereço IP</li>
-              <li>Tipo de navegador e versão</li>
               <li>Páginas visitadas no nosso website</li>
-              <li>Tempo de permanência no site</li>
-              <li>Origem da visita (referrer)</li>
-              <li>Dispositivo utilizado (desktop, mobile, tablet)</li>
+              <li>País de origem (sem localização precisa)</li>
+              <li>Tipo de dispositivo utilizado (desktop, mobile, tablet)</li>
+              <li>Referrer (origem da visita)</li>
             </ul>
             <p className="text-gray-700 mt-3">
-              Para mais informações sobre cookies, consulte a nossa <Link to="/politica-cookies" className="text-[#00BFFF] hover:underline">Política de Cookies</Link>.
+              <strong>Importante:</strong> O Vercel Analytics é 100% privado e não recolhe endereços IP, 
+              não utiliza cookies e não permite identificação individual. Totalmente conforme com RGPD sem necessidade de consentimento.
+              Para mais informações: <Link to="/politica-cookies" className="text-[#00BFFF] hover:underline">Política de Cookies</Link>.
             </p>
           </section>
 
