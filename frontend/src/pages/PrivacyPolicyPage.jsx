@@ -149,7 +149,7 @@ const PrivacyPolicyPage = () => {
             </p>
             <ul className="list-disc pl-6 space-y-2 text-gray-700">
               <li><strong>Web3Forms:</strong> Serviço de processamento de formulários de contacto (conforme a sua Política de Privacidade)</li>
-              <li><strong>PostHog:</strong> Plataforma de análise de website (apenas se consentir cookies de análise)</li>
+              <li><strong>Vercel Analytics:</strong> Analytics sem identificação pessoal (dados 100% anónimos e agregados)</li>
               <li><strong>Fornecedores e parceiros:</strong> Para cumprimento de encomendas (quando aplicável)</li>
               <li><strong>Autoridades legais:</strong> Quando exigido por lei ou ordem judicial</li>
             </ul>
